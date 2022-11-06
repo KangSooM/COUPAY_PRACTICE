@@ -1,6 +1,6 @@
-import 'package:coupang/home.dart';
-import 'package:coupang/onetouch.dart';
-import 'package:coupang/payment.dart';
+import 'package:coupang/page/home.dart';
+import 'package:coupang/page/onetouch.dart';
+import 'package:coupang/page/payment.dart';
 import 'package:flutter/material.dart';
 
 void main() {
