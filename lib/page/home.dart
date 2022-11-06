@@ -1,3 +1,4 @@
+import 'package:coupang/theme/text_theme.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -17,8 +18,7 @@ class Home extends StatelessWidget {
                 Icons.arrow_back_ios_new,
                 color: Colors.black,
               ),
-              Text('coupay',
-                  style: TextStyle(color: Colors.black, fontSize: 26)),
+              Text('coupay', style: CoupangTextTheme.title),
               Icon(
                 Icons.close,
                 color: Colors.black,
@@ -34,14 +34,17 @@ class Home extends StatelessWidget {
                 padding: const EdgeInsets.all(20.0),
                 child: Column(
                   children: [
-                    Text('쿠페이 머니 잔액 >'),
-                    Text(
-                      '0원',
-                    ),
-                    Text('자동 충전 설정'),
+                    Text('쿠페이 머니 잔액 >', style: CoupangTextTheme.title),
+                    Text('0원', style: CoupangTextTheme.white),
+                    Text('자동 충전 설정',
+                        style: CoupangTextTheme.white
+                            .copyWith(decoration: TextDecoration.underline)),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [Text('+ 충전하기'), Text('- 인출하기')],
+                      children: [
+                        Text('+ 충전하기', style: CoupangTextTheme.white),
+                        Text('- 인출하기', style: CoupangTextTheme.white)
+                      ],
                     )
                   ],
                 ),
@@ -52,7 +55,7 @@ class Home extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('쿠페이 적립 혜택 >'),
+                  Text('쿠페이 적립 혜택 >', style: CoupangTextTheme.title),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
