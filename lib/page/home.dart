@@ -1,4 +1,5 @@
 import 'package:coupang/theme/text_theme.dart';
+import 'package:coupang/widget/list_item.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -100,61 +101,15 @@ class Home extends StatelessWidget {
               padding: const EdgeInsets.all(20.0),
               child: Column(
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text('결제수단 관리 4'),
-                        Text('>'),
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text('쿠페이 사용내역'),
-                        Text('>'),
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text('비밀번호, 지문 설정'),
-                        Text('>'),
-                      ],
-                    ),
-                  ),
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.pushNamed(context, "/oneTouch");
-                    },
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text('원터치결제 설정'),
-                          Text('>'),
-                        ],
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text('현금영수증 설정'),
-                        Text('>'),
-                      ],
-                    ),
-                  ),
+                  ListItem(title: "결제수단 관리", onTap: () {}),
+                  ListItem(title: "쿠페이 사용내역", onTap: () {}),
+                  ListItem(title: "비밀번호 지문 설정", onTap: () {}),
+                  ListItem(
+                      title: "원터치결제 설정",
+                      onTap: () {
+                        Navigator.pushNamed(context, "/oneTouch");
+                      }),
+                  ListItem(title: "현금영수증 설정", onTap: () {}),
                 ],
               ),
             )
