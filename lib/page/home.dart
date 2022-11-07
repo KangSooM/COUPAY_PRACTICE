@@ -34,6 +34,8 @@ class Home extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text('쿠페이 머니 잔액 >', style: CoupangTextTheme.title),
                     Text('0원', style: CoupangTextTheme.white),
