@@ -51,45 +51,61 @@ class Home extends StatelessWidget {
               ),
             ),
           ),
-          Container(
-            padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const Text('쿠페이 적립 혜택 >', style: CoupangTextTheme.title),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const [
-                        Text('적립예정'),
-                        Text('0원'),
-                      ],
-                    ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const [
-                        Text('지금까지 받은 총 혜택'),
-                        Text('25,777원'),
-                      ],
-                    )
-                  ],
-                )
-              ],
-            ),
-          ),
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(
               children: [
                 Container(
-                    color: const Color(0xffd9e6fd),
-                    width: 380,
-                    height: 80,
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(color: Colors.grey),
+                      borderRadius: BorderRadius.circular(10)),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        width: double.infinity,
+                        color: Colors.grey[200],
+                        child: const Text('쿠페이 적립 혜택 >',
+                            style: CoupangTextTheme.title),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: const [
+                                Text('적립예정'),
+                                Text('0원'),
+                              ],
+                            ),
+                            Divider(),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: const [
+                                Text('지금까지 받은 총 혜택'),
+                                Text('25,777원'),
+                              ],
+                            )
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+                Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: const Color(0xffd9e6fd),
+                    ),
                     child: const Center(
-                      child: Text('더 나은 서비스를 위해\n'
-                          '고객님의 소리를 들려주세요.'),
+                      child: Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text('더 나은 서비스를 위해\n'
+                            '고객님의 소리를 들려주세요.'),
+                      ),
                     )),
                 Row(
                     mainAxisAlignment: MainAxisAlignment.center,
