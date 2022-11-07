@@ -79,39 +79,45 @@ class Home extends StatelessWidget {
               ],
             ),
           ),
-          Container(
-              color: const Color(0xffd9e6fd),
-              width: 380,
-              height: 80,
-              child: const Center(
-                child: Text('더 나은 서비스를 위해\n'
-                    '고객님의 소리를 들려주세요.'),
-              )),
-          Row(mainAxisAlignment: MainAxisAlignment.center, children: const [
-            Icon(
-              Icons.circle,
-              size: 10,
-              color: Colors.blue,
-            ),
-            Icon(
-              Icons.circle_outlined,
-              size: 10,
-              color: Colors.blue,
-            ),
-          ]),
           Padding(
-            padding: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(16.0),
             child: Column(
               children: [
-                ListItem(title: "결제수단 관리", onTap: () {}),
-                ListItem(title: "쿠페이 사용내역", onTap: () {}),
-                ListItem(title: "비밀번호 지문 설정", onTap: () {}),
-                ListItem(
-                    title: "원터치결제 설정",
-                    onTap: () {
-                      Navigator.pushNamed(context, "/oneTouch");
-                    }),
-                ListItem(title: "현금영수증 설정", onTap: () {}),
+                Container(
+                    color: const Color(0xffd9e6fd),
+                    width: 380,
+                    height: 80,
+                    child: const Center(
+                      child: Text('더 나은 서비스를 위해\n'
+                          '고객님의 소리를 들려주세요.'),
+                    )),
+                Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: const [
+                      Icon(
+                        Icons.circle,
+                        size: 10,
+                        color: Colors.blue,
+                      ),
+                      Icon(
+                        Icons.circle_outlined,
+                        size: 10,
+                        color: Colors.blue,
+                      ),
+                    ]),
+                Column(
+                  children: [
+                    ListItem(title: "결제수단 관리", onTap: () {}),
+                    ListItem(title: "쿠페이 사용내역", onTap: () {}),
+                    ListItem(title: "비밀번호 지문 설정", onTap: () {}),
+                    ListItem(
+                        title: "원터치결제 설정",
+                        onTap: () {
+                          Navigator.pushNamed(context, "/oneTouch");
+                        }),
+                    ListItem(title: "현금영수증 설정", onTap: () {}),
+                  ],
+                )
               ],
             ),
           )
