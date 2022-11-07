@@ -83,8 +83,10 @@ class Home extends StatelessWidget {
               color: const Color(0xffd9e6fd),
               width: 380,
               height: 80,
-              child: const Text('더 나은 서비스를 위해\n'
-                  '고객님의 소리를 들려주세요.')),
+              child: const Center(
+                child: Text('더 나은 서비스를 위해\n'
+                    '고객님의 소리를 들려주세요.'),
+              )),
           Row(mainAxisAlignment: MainAxisAlignment.center, children: const [
             Icon(
               Icons.circle,
