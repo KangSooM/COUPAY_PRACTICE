@@ -20,7 +20,7 @@ class ListItem extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(title),
-            Text('>'),
+            const Text('>'),
           ],
         ),
       ),

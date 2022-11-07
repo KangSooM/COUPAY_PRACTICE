@@ -9,10 +9,9 @@ class OneTouch extends StatelessWidget {
       appBar: AppBar(
           backgroundColor: Colors.white,
           centerTitle: true,
-          title: Container(
-              child: Row(
+          title: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
+            children: const [
               Icon(
                 Icons.arrow_back_ios_new,
                 color: Colors.black,
@@ -24,19 +23,18 @@ class OneTouch extends StatelessWidget {
                 color: Colors.black,
               )
             ],
-          ))),
-      body: Container(
-          child: Column(
+          )),
+      body: Column(
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
+            children: const [
               Text('원터치결제 사용'),
               Icon(Icons.check_circle),
             ],
           ),
           Column(
-            children: [
+            children: const [
               Text('원터치결제란?'),
               Text('•저장된 결제수단으로 결제 시 비밀번호 입력없이 간편하게 결제하는 방식입니다.'),
               Text('•쿠팡의 보안시스템을 통해 안전한 거래임이 확인된 경우에만 원터치결제가 진행됩니다.'),
@@ -44,7 +42,7 @@ class OneTouch extends StatelessWidget {
             ],
           )
         ],
-      )),
+      )
     );
   }
 }

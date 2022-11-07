@@ -16,8 +16,8 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const Home(),
-        '/oneTouch': (context) => OneTouch(),
-        "/payment": (context) => PayMent(),
+        '/oneTouch': (context) => const OneTouch(),
+        "/payment": (context) => const PayMent(),
       },
     );
   }
