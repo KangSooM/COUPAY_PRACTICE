@@ -35,7 +35,7 @@ class Home extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text('쿠페이 머니 잔액 >', style: CoupangTextTheme.title),
+                  const Text('쿠페이 머니 잔액 >', style: CoupangTextTheme.white),
                   const Text('0원', style: CoupangTextTheme.white),
                   Text('자동 충전 설정',
                       style: CoupangTextTheme.white
@@ -56,7 +56,7 @@ class Home extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text('쿠페이 적립 혜택 >', style: CoupangTextTheme.white),
+                const Text('쿠페이 적립 혜택 >', style: CoupangTextTheme.title),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
