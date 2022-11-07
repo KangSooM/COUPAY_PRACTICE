@@ -107,7 +107,11 @@ class Home extends StatelessWidget {
                     ]),
                 Column(
                   children: [
-                    ListItem(title: "결제수단 관리", onTap: () {}),
+                    ListItem(
+                        title: "결제수단 관리",
+                        onTap: () {
+                          Navigator.pushNamed(context, "/payment");
+                        }),
                     ListItem(title: "쿠페이 사용내역", onTap: () {}),
                     ListItem(title: "비밀번호 지문 설정", onTap: () {}),
                     ListItem(
