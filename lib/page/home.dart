@@ -14,12 +14,12 @@ class Home extends StatelessWidget {
           title: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: const [
-               Icon(
+              Icon(
                 Icons.arrow_back_ios_new,
                 color: Colors.black,
               ),
-               Text('coupay', style: CoupangTextTheme.title),
-               Icon(
+              Text('coupay', style: CoupangTextTheme.title),
+              Icon(
                 Icons.close,
                 color: Colors.black,
               )
@@ -43,8 +43,8 @@ class Home extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: const [
-                       Text('+ 충전하기', style: CoupangTextTheme.white),
-                       Text('- 인출하기', style: CoupangTextTheme.white)
+                      Text('+ 충전하기', style: CoupangTextTheme.white),
+                      Text('- 인출하기', style: CoupangTextTheme.white)
                     ],
                   )
                 ],
@@ -56,22 +56,22 @@ class Home extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text('쿠페이 적립 혜택 >', style: CoupangTextTheme.title),
+                const Text('쿠페이 적립 혜택 >', style: CoupangTextTheme.white),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: const [
-                       Text('적립예정'),
-                       Text('0원'),
+                        Text('적립예정'),
+                        Text('0원'),
                       ],
                     ),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: const [
-                         Text('지금까지 받은 총 혜택'),
-                         Text('25,777원'),
+                        Text('지금까지 받은 총 혜택'),
+                        Text('25,777원'),
                       ],
                     )
                   ],
@@ -86,12 +86,12 @@ class Home extends StatelessWidget {
               child: const Text('더 나은 서비스를 위해\n'
                   '고객님의 소리를 들려주세요.')),
           Row(mainAxisAlignment: MainAxisAlignment.center, children: const [
-             Icon(
+            Icon(
               Icons.circle,
               size: 10,
               color: Colors.blue,
             ),
-             Icon(
+            Icon(
               Icons.circle_outlined,
               size: 10,
               color: Colors.blue,
